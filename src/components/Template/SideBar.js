@@ -1,43 +1,40 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import ContactIcons from '../Contact/ContactIcons';
-
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
 const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/" className="logo">
-        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
+        <img src={`${PUBLIC_URL}/images/logo.jpg`} alt="" />
       </Link>
       <header>
-        <h2>Michael D&apos;Angelo</h2>
-        <p><a href="mailto:michael.l.dangelo@gmail.com">michael.l.dangelo@gmail.com</a></p>
+        <h2>Aktivewipes</h2>
       </header>
     </section>
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Michael. I like building things.
-        I am a <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC Alumni, and
-        the co-founder and CTO of <a href="https://arthena.com">Arthena</a>. Before Arthena I was
-        at <a href="https://matroid.com">Matroid</a>
-        , <a href="https://planet.com">Planet</a>
-        , <a href="https://planetaryresources.com">Planetary Resources</a>
-        , <a href="https://facebook.com">Facebook</a>
-        , and <a href="https://seds.org">SEDS</a>.
+      <p>Our proprietary AKTIVE wipes are made from top
+        quality sources to provide you with a powerful solution
+        to sterilizing commercial, industrial, and household surfaces.
+        Ready to use disinfectant wipes are both durable,
+        lightly scented. They won’t scratch surfaces or leave a residue.
       </p>
-      <ul className="actions">
-        <li>
-          {!window.location.pathname.includes('/resume') ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
-        </li>
-      </ul>
+    </section>
+
+    <section className="blurb">
+      <h3><a href="mailto:sales@aktivewipes.com">sales@aktivewipes.com</a></h3>
+      <h4>808-927-3685 </h4>
+      <h5>BLT Ventures LLC</h5>
+      <h6>40 Montague Ln
+        Frisco TX 75036
+      </h6>
     </section>
 
     <section id="footer">
-      <ContactIcons />
-      <p className="copyright">&copy; Michael D&apos;Angelo <Link to="/">mldangelo.com</Link>.</p>
+      <p className="copyright">&copy; AKTIVEWIPES 2021 <Link to="/">aktivewipes.us</Link>.</p>
     </section>
   </section>
 );
